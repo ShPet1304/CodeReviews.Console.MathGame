@@ -6,7 +6,6 @@ int answer;
 int newUserAnswer;
 int userScore = 0;
 int maxRounds = 5;
- int choice;
 string? userAnswer;
 string result;
 bool gameRunning = true;
@@ -23,7 +22,7 @@ Menu();
 
 //--Methods--
 
-void Menu()
+void Menu( int choice = default)
 { 
   Console.WriteLine("Choose an option:\n1) Addition Math Questions\n2) Subtraction Math Questions\n3) Multiplication Math Questions\n4) Division Math Questions\n5) Random Operator Math Questions\n6) Game History\n7) Exit");
   
